@@ -1,0 +1,14 @@
+<h2>Users</h2>
+<button [disabled]="!enableAdd" class="btn btn-light btn-block mb-3">Add New User</button>
+<ul class="list-unstyled">
+    <li class="card card-body mb-3" *ngFor="let user of users">
+        <div class="row">
+
+            <div class="col-sm-8">
+                <h3> {{user.firstName}} {{user.lastName}} </h3>
+
+            </div>
+        </div>
+
+    </li>
+</ul>
