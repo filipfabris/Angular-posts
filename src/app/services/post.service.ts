@@ -37,6 +37,13 @@ export class PostService {
     return this.http.put<Post>(url, post, httpOptions);
   }
 
+  getPost(id: number): Observable<Post> { //Za post.component i routing
+
+    const url = `${this.postsUrl}/${id}`;
+
+    return this.http.get<Post>(url); //get request
+  }
+
   removePost(post: Post | number): Observable<Post> {
     const id = typeof post == 'number' ? post : post.id;
     const url = `${this.postsUrl}/${id}`;

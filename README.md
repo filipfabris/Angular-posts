@@ -15,5 +15,11 @@
     <li> Separate components </li>
 	<ul>
         <li> used @Output and @Input to connect components via Property-biding, events and EventEmitters </li>
-		</ul>
+	</ul>
+    <li> Router </li>
+    <ul>
+        <li> Connected all components to home page </li>
+        <li> Component page-not-found, added to router </li>
+	</ul>
+    
 </ul>
