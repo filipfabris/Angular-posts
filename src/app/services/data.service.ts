@@ -30,6 +30,7 @@ export class DataService {
     ]
 
   }
+
   getUsers(): User[] {
     return this.users;
   }

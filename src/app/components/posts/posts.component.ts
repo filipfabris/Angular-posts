@@ -9,11 +9,13 @@ import { PostService } from 'src/app/services/post.service';
 })
 export class PostsComponent implements OnInit {
   posts: Post[];
+
   currentPost: Post = {
     id: 0,
     title: '',
     body: ''
   }
+
   isEdit: boolean = false;
 
   constructor(private postService: PostService) { }
